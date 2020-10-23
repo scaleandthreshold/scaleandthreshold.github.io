@@ -1,0 +1,242 @@
+/* ----- STYLE STYLE STYLE ----- */
+
+body {
+    margin: 30px 100px;
+    background-color: rgb(255,210,0);
+    font-family: sans-serif;
+}
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid rgb(0,0,0);
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ----- HEADER HEADER HEADER ----- */
+
+div.header {
+    background: white;
+}
+
+h1.header {
+    font-size: 70px;
+}
+
+p.header {
+    font-size: 30px;
+}
+
+
+/* ----- CONTENT CONTENT CONTENT ----- */
+
+div.content {
+    background: white;
+}
+
+p.content {
+    font-size: 20px;
+}
+
+
+
+/* ----- FOOTER FOOTER FOOTER ----- */
+
+div.footer {
+    background: white;
+    text-align: right;
+}
+
+p.footer {
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(250,250,250);
+}
+
+
+
+
+
+
+/* ----- PAGE TITLE ----- 
+li.pageTitle {
+    display: inline-block;
+    color: rgb(100,100,100);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(255,165,0);
+
+    cursor:default;
+}
+
+
+
+
+
+/* ----- LINKS ----- 
+li a { /* I don't know why I have to use 'li a' and cant use 'li.link' 
+    display: inline-block;
+    color: rgb(100,100,100);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* no underline on links 
+    float: right;
+}
+
+li a:hover {
+    background-color: rgb(245,245,245);
+    color: black;
+}
+
+li a:active {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: red;
+    color: rgb(150,150,150);
+}
+
+li a.active {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: red;
+}
+
+li.workLink {
+    color: rgb(100,100,100);
+}
+
+
+
+
+
+
+
+/* ----- CONTENT CONTENT CONTENT ----- 
+
+div.content {
+    padding-top: 25px;
+    overflow: auto;
+}
+
+img.work {
+    float: left;
+    padding-right: 30px;
+    padding-left: 16px;
+    width: 60%;
+}
+
+
+h2.workTitle {
+    font-size: 1.0em;
+    color: rgb(100,100,100);
+    font-weight: bold;
+}
+
+audio {
+    background-color: white;
+}
+
+p.workInfo {
+    display: inline;
+    font-size: 0.8em;
+    font-style: bold;
+    color: rgb(100,100,100);
+    font-weight: bold;
+}
+
+p.workBlurb {
+        font-size: 0.8em;
+        font-family: sans-serif;
+        color: rgb(100,100,100);
+}
+
+p.workList {
+    display: inline;
+    font-size: 0.9em;
+}
+
+a.workLink {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+a.workLink:hover {
+    background-color: rgb(245,245,245);
+}
+
+a.workLink:active {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0,180,230);
+    border-bottom-width: 1px;
+}
+
+
+
+
+
+
+
+/* ----- FOOTER FOOTER FOOTER ----- 
+
+p.footerBar {
+    border-top-style: solid;
+    border-top-color: rgb(255,165,0);
+    border-top-width: 1px;
+}
+
+/* style for the button itself 
+p.footerButton {
+    background: rgb(250,250,250);
+    border-top-style: solid;
+    border-top-color: rgb(255,165,0);
+    border-top-width: 1px;
+    color: rgb(150,150,150);
+    text-align:center;
+    padding: 10px;
+}
+
+p.footerButton:hover {
+    background: rgb(245,245,245);
+    cursor: pointer;
+}
+
+/* general class for showing/hiding the button 
+.buttonHide {
+    display: span;
+}
+
+/* general class for showing/hiding everything below the button 
+.footNotes {
+    display: none;
+}
+
+/* like the body{} tag - but for everything below the line 
+div.footerContent {
+    background-color: rgb(245,245,245);
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
