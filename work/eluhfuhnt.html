@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="../work.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" src="../media/work/eluhfuhnt/2018-JakeMoore-[el-uh-fuh nt]-01-small.jpg" alt="[eluhfuhnt image]">
+
+    <!-- WORK TITLE -->
+    <h2 class="workTitle"> <i>/el-uh-fuh nt/</i> (2018)</h2>
+
+    <!-- MATERIALS AND DIMENSIONS -->
+    <p class="workInfo">
+        Projection, dimensions variable
+    </p>
+    <br />
+
+    <!-- BLURB -->
+    <p class="workBlurb">
+        'el-uh-fuh nt' refers directly to Erik Bünger's performance/talk 'The Elephant Who Was a Rhinoceros, echoing the sound of the performance in the text of the speech.
+    </p>
+    
+</div>
+<br />
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show footnotes</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide footnotes</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+            <p>http://www.erikbunger.com/the-elephant-who-was-a-rhinoceros/</p>
+
+            <iframe src="https://player.vimeo.com/video/229601246?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+            <p><a href="https://vimeo.com/229601246">Excerpt from &#039;The Elephant who was a Rhinoceros&#039; (2017)</a> from <a href="https://vimeo.com/user12132138">Erik B&uuml;nger</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+        </div>
+    </div>
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+</html>

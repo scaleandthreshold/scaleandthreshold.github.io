@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="work.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="blog.html"> Blog </a></li>
+        <li><a href="about.html"> About </a></li>
+        <li><a href="work.html" class="active"> Work </a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" id="workImage" src="media/work/twovoice/2018-JakeMoore-'TwoVoice'-02.jpg" alt="[Work Image]">
+
+
+
+    <h2 class="workTitle"> Selected Works </h2>
+    <hr />
+
+    <p class="workList">
+        <br />
+        <a class="workLink" onmouseover="imageFourmant()" onmouseout="imageWork()" href="fourmant.html">&#9670; Fourmant</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageResearch()" onmouseout="imageWork()" href="researchstrategies.html">&#9670; Research Strategies</a>
+        <br />
+        <br />
+
+        <a class="workLink" onmouseover="imageResonate()" onmouseout="imageWork()" href="resonate.html">&#9670; Resonate (I Am Shooting In A Room)</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageGrit()" onmouseout="imageWork()" href="thegritinthepearl.html">&#9670; The Grit In The Pearl</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imagePhoneme()" onmouseout="imageWork()"href="phonemehomophone.html">&#9670; Phoneme/Homophone</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageEluhfuhnt()" onmouseout="imageWork()" href="eluhfuhnt.html">&#9670; /el-uh-fuh nt/</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageUrsonata()" onmouseout="imageWork()" href="ursonata.html">&#9670; Ursonata</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageTwoVoice()" onmouseout="imageWork()" href="twovoice.html">&#9670; 'Two Voice'</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageThreeNote()" onmouseout="imageWork()" href="threenoteexternal.html">&#9670; Three Note External Body Resonance Investigation</a>
+        <br />
+        <br />
+        <a class="workLink" onmouseover="imageSonicSigil()" onmouseout="imageWork()" href="untitledsonicsigil.html">&#9670; Untitled (Sonic Sigil)</a>
+        <br />
+        <br />
+    </p>
+
+</div>
+<br />
+
+    <p class="footerBar"></p>
+
+
+<script>
+
+    function imageWork() {
+        document.getElementById("workImage").src="http://exeterdown.5gbfree.com/honours/primaryArchive/03'TwoVoice'/2018-JakeMoore-'TwoVoice'-02.jpg";
+    }
+
+    function imageFourmant() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/fourmant/2-JakeMoore0994-small.jpg";
+    }
+
+	function imageResearch() {
+		document.getElementById("workImage").src="http://jake-moore.net/work/researchstrategies/2018-JakeMoore-ResearchStrategies-00-small.jpg";
+	}
+
+    function imageResonate() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/resonate/2018-JakeMoore-Resonate-02-small.JPG";
+    }
+
+    function imageGrit() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/thegritinthepearl/2018-JakeMoore-TheGritInThePearl-00-small.jpg";
+    }
+
+    function imagePhoneme() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/phonemehomophone/2018-JakeMoore-Phoneme-01-small.JPG";
+    }
+
+    function imageEluhfuhnt() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/eluhfuhnt/2018-JakeMoore-[el-uh-fuh nt]-01-small.jpg";
+    }
+
+    function imageUrsonata() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/ursonata/ursonata-small.jpg";
+    }
+
+    function imageTwoVoice() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/twovoice/2018-JakeMoore-'TwoVoice'-01-small.jpg";
+    }
+
+    function imageThreeNote() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/threenoteexternal/threenote-small.png";
+    }
+
+    function imageSonicSigil() {
+        document.getElementById("workImage").src="http://jake-moore.net/work/untitledsonicsigil/2018-JakeMoore-Untitled(SonicSigil)-01-small.jpg";
+    }
+
+/*
+I would like to implement a cleaner algo version at some stage...
+    function imageReplace() {
+        document.getElementById("blaah").src="blaah";
+    }
+*/
+
+</script>
+
+
+</body>
+</html>

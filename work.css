@@ -1,65 +1,23 @@
 /* ----- STYLE STYLE STYLE ----- */
 
+
 body {
     margin: 30px 100px;
-    background-color: rgb(255,210,0);
+    background-color: rgb(250,250,250);
     font-family: sans-serif;
 }
 
 hr {
     display: block;
-    height: 10px;
+    height: 3px;
     border: 0;
-    border-top: 1px solid rgb(0,0,0);
+    border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
 
 
 /* ----- HEADER HEADER HEADER ----- */
-
-div.header {
-    background: white;
-}
-
-h1.header {
-    font-size: 70px;
-}
-
-p.header {
-    font-size: 30px;
-}
-
-
-/* ----- CONTENT CONTENT CONTENT ----- */
-
-div.content {
-    background: white;
-}
-
-p.content {
-    font-size: 20px;
-}
-
-
-
-/* ----- FOOTER FOOTER FOOTER ----- */
-
-div.footer {
-    background: white;
-    text-align: right;
-}
-
-p.footer {
-    font-size: 20px;
-}
-
-
-
-
-
-
-/*
 
 ul.menu {
     list-style-type: none;
@@ -70,11 +28,7 @@ ul.menu {
 }
 
 
-
-
-
-
-/* ----- PAGE TITLE ----- 
+/* ----- PAGE TITLE ----- */
 li.pageTitle {
     display: inline-block;
     color: rgb(100,100,100);
@@ -92,16 +46,13 @@ li.pageTitle {
 }
 
 
-
-
-
-/* ----- LINKS ----- 
-li a { /* I don't know why I have to use 'li a' and cant use 'li.link' 
+/* ----- LINKS ----- */
+li a { /* I don't know why I have to use 'li a' and cant use 'li.link' */
     display: inline-block;
     color: rgb(100,100,100);
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; /* no underline on links 
+    text-decoration: none; /* no underline on links */
     float: right;
 }
 
@@ -133,7 +84,7 @@ li.workLink {
 
 
 
-/* ----- CONTENT CONTENT CONTENT ----- 
+/* ----- CONTENT CONTENT CONTENT ----- */
 
 div.content {
     padding-top: 25px;
@@ -199,7 +150,7 @@ a.workLink:active {
 
 
 
-/* ----- FOOTER FOOTER FOOTER ----- 
+/* ----- FOOTER FOOTER FOOTER ----- */
 
 p.footerBar {
     border-top-style: solid;
@@ -207,7 +158,7 @@ p.footerBar {
     border-top-width: 1px;
 }
 
-/* style for the button itself 
+/* style for the button itself */
 p.footerButton {
     background: rgb(250,250,250);
     border-top-style: solid;
@@ -223,17 +174,17 @@ p.footerButton:hover {
     cursor: pointer;
 }
 
-/* general class for showing/hiding the button 
+/* general class for showing/hiding the button */
 .buttonHide {
     display: span;
 }
 
-/* general class for showing/hiding everything below the button 
+/* general class for showing/hiding everything below the button */
 .footNotes {
     display: none;
 }
 
-/* like the body{} tag - but for everything below the line 
+/* like the body{} tag - but for everything below the line */
 div.footerContent {
     background-color: rgb(245,245,245);
     padding: 20px;
