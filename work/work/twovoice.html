@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="../style.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html" class="active">Projects</a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" src="twovoice/2018-JakeMoore-'TwoVoice'-full-warm.jpg" alt="[Work Image]">
+
+    <!-- WORK TITLE -->
+    <h2 class="workTitle"> <i>'Two Voice'</i> (2018)</h2>
+
+    <!-- MATERIALS AND DIMENSIONS -->
+    <p class="workInfo">
+        <b> Installation, rugs, chairs, speakers, cabinet, amp, paisley scarf, modular synthesizers, 3300 x 2400 x 1200 mm, generative audio </b>
+    </p>
+    <br />
+    <br />
+
+    <!-- AUDIO PLAYER -->
+    <audio controls="controls">
+        <source src="twovoice/2018-JakeMoore-'TwoVoice'-00.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+    </audio>
+
+    <!-- BLURB -->
+    <p class="workBlurb"> 
+        Audio excerpt from installation.
+    </p>
+
+    <hr />
+
+    <!--
+    <p class="workBlurb">
+        Fourmant builds on the speech synthesis engine written for ‘Phoneme’ with a few key differences:
+        <br />
+        <br />
+        Multiple instances of the engine are used, each one placed in its own speaker; a small collection of ‘dialects’ or rules apply to each voice such as scale, octave range, and tempo; and the pitch or intonation of the speech has also been quantised, or restricted to a range of traditional musical scales.
+        <br />
+        <br />
+        This means that while the specific pitch, volume, timbre, and rhythm of each voice are relatively independent, all three voices speak, or sing as a communal whole observing the same grammatical rules, even as these rules change over time.
+    </p>
+    -->
+    
+</div>
+<br />
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show footnotes</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide footnotes</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+            <br />
+            <img src="http://exeterdown.5gbfree.com/honours/primaryArchive/03'TwoVoice'/2018-JakeMoore-'TwoVoice'-02.jpg" width="60%" alt="Two Voice (detail)">
+        </div>
+    </div>
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+</html>

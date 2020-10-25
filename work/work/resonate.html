@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="../style.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html" class="active">Projects</a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" src="../media/work/resonate/2018-JakeMoore-Resonate-02-small.jpg" alt="[Work Image]">
+
+    <!-- WORK TITLE -->
+    <h2 class="workTitle"> <i>Resonate (I Am Shooting In A White Room)</i> (2018)</h2>
+
+    <!-- MATERIALS AND DIMENSIONS -->
+    <p class="workInfo">
+        Installation, speakers, amp, media player, table, dimensions variable, audio loop 25’34”
+    </p>
+    <br />
+    <br />
+
+    <!-- AUDIO PLAYER -->
+    <audio controls="controls">
+        <source src="http://exeterdown.5gbfree.com/honours/primaryArchive/08Resonate/2018-JakeMoore-Resonate-00.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+    </audio>
+    <hr>
+
+    <!-- BLURB -->
+    <p class="workBlurb">
+        Making use of pre-existing material, and drawing connections between different forms of resonance; indexical, iconic, and symbolic.
+    </p>
+    
+</div>
+<br />
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show footnotes</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide footnotes</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+            <br />
+            <img src="http://exeterdown.5gbfree.com/honours/primaryArchive/08Resonate/2018-JakeMoore-Resonate-01.jpg" alt="Resonate (detail)" width="600">
+            <br />
+            <br />
+
+            <p>
+            	<a href="http://www.erikbunger.com/variations-on-a-theme-by-lou-reed/" target="_blank" >http://www.erikbunger.com/variations-on-a-theme-by-lou-reed/</a>
+            </p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/367713014&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+            <br />
+            <br />
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fAxHlLK3Oyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br />
+            <br />
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/n4onQqSMUag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br />
+            <br />
+
+        </div>
+    </div>
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+</html>

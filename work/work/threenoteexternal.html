@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="../style.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html" class="active">Projects</a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" src="threenoteexternal/ventriloquy-self-by-proxy-keelan-o_hehir-15-1200x801.jpg" alt="[threenote image]">
+
+    <!-- WORK TITLE -->
+    <h2 class="workTitle"> <i>Three Note External Body Resonance Investigation</i> (2018)</h2>
+
+    <!-- MATERIALS AND DIMENSIONS -->
+    <p class="workInfo">
+        Performance and recording, talk box, microphone, mixer, two channel recording + live voice, 9'34"
+    </p>
+    <br />
+    <br />
+    <!-- AUDIO PLAYER -->
+    <audio controls="controls">
+        <source src="threenoteexternal/2019-06-00 - voice work - three layers.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+    </audio>
+    <br />
+    <hr>
+
+    <!-- BLURB -->
+    <p class="workBlurb"> 
+        This piece was produced by creating a feedback loop between a microphone and a speaker, with the complicaion of the speaker passing through my body before reaching the microphone.
+        <br />
+        <br />
+        To do this, I used a talk box, which is a speaker housed inside a closed box with a hose attached. The hose is then inserted into my mouth, allowing me to filter the sound of the speaker by opening and closing my mouth.
+        <br />
+        <br />
+        There are three layers, as the piece was performed in three different locations, allowing the resonant tones of each room to influence the sound of the feedback; together duplicating the three formants of the voice.
+    </p>
+    <hr class="short">
+    <p class="workBlurb">
+        Photos by Keelan O'Hehir
+    </p>
+    
+</div>
+<br />
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show footnotes</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide footnotes</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+            <p>
+            <img class="work" src="threenoteexternal/ventriloquy-self-by-proxy-keelan-o_hehir-8-1200x801-bw.jpg" alt="[threenote image]">
+            <img class="work" src="threenoteexternal/photo_76_02-2.jpg" alt="[threenote image]">
+            </p>
+            <br />
+            <p> https://liquidarchitecture.org.au/events/self-by-proxy </p>
+            <br />
+            
+            <p>
+            <iframe src="https://player.vimeo.com/video/297924624?title=0&byline=0&portrait=0" width="640" height="480" frameborder="0" style="float:left; margin-right: 20px;"></iframe></p>
+
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256895501&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <br />
+
+             <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/GIIlvFjVTd6U9pqa_I4leg/179586060236" data-did="a6c16726e2bb4b96a01cc5547343e590863fb4d7" data-language="en_US"><a href="http://exeterdown.tumblr.com/post/179586060236/three-note-external-body-resonance-investigation">http://exeterdown.tumblr.com/post/179586060236/three-note-external-body-resonance-investigation</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+
+        </div>
+    </div>
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+</html>

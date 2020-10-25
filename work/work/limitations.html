@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Jake Moore | Artist </title>
+
+
+ <!-- ----- META META META META META META ----- -->
+
+<meta charset="UTF-8"> <!-- very broad and flexible character set -->
+<meta name="description" content="Jake Moore - Artist Website">
+<meta name="keywords" content="art, australia, sound">
+<meta name="author" content="Jake Moore">
+
+
+ <!-- improved performance on mobile devices -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- LINK TO EXTERNAL STYLES, FONTS ETC. -->
+
+<link rel="stylesheet" type="text/css" href="../style.css"> <!-- local --> 
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<!-- GOOGLE ICONS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+
+<body>
+
+
+
+<!-- ----- HEADER HEADER HEADER ----- -->
+<div>
+    <ul class="menu">
+        <li class="pageTitle"> JAKE MOORE </li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html" class="active">Projects</a></li>
+    </ul>
+</div>
+
+
+
+<!-- ----- CONTENT CONTENT CONTENT ----- -->
+<div class="content">
+
+    <!-- IMAGE SLIDESHOW -->
+    <img class="work" src="limitations/04.jpg" alt="[limitations image]">
+
+    <!-- WORK TITLE -->
+    <h2 class="workTitle"> <i>Limitations</i> (2015)</h2>
+
+    <!-- MATERIALS AND DIMENSIONS -->
+    <p class="workInfo">
+        Pen drawing, 420 x 297
+    </p>
+    <br />
+
+    <!-- BLURB -->
+    <p class="workBlurb">
+        Collaborative drawings between myself and my tools.
+    </p>
+    <hr class="short">
+    <p class="workBlurb">
+        Limitations are a series of self-portraits made using a robotic arm, controlled by live input; where the ‘self’ is the sum of the user and tools used. <br />
+        <br />
+        Aspects of the pen, paper, motors, and electronics all contributed to the final forms. The work aims to unsettle any clear distinctions between tool and user, artist and work, medium and message.
+    </p>
+</div>
+<br />
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show footnotes</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide footnotes</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+            <img src="limitations/05.jpg" width="60%" alt="[limitations image]">
+            <p>
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
+
+</body>
+</html>
