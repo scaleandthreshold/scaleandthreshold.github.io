@@ -23,9 +23,9 @@
     <div>
         <ul class="menu">
             <li class="pageTitle"> JAKE MOORE </li>
-            <li><a href="blog.html"> Blog </a></li>
-            <li><a href="about.html"> About </a></li>
-            <li><a href="index.html" class="active"> Projects </a></li>
+            <li class="pageMenu"><a class="pageMenu" href="blog.html"> Blog </a></li>
+            <li class="pageMenu"><a class="pageMenu" href="about.html"> About </a></li>
+            <li class="pageMenu"><a class="pageMenu-active" href="index.html"> Projects </a></li>
         </ul>
     </div>
 
@@ -37,13 +37,76 @@
         <!-- IMAGE / VIDEO / SLIDESHOW -->
         <img class="work" id="workImage" src="media/work/twovoice/2018-JakeMoore-'TwoVoice'-02.jpg" width="60%" alt="[Work Image]">
 
-        <h2 class="workTitle">Selected Work and Projects</h2>
+        <h2 class="workTitle">Selected Work</h2>
+        <hr>
 
-        <p class="workInfo">
-            A selection of works loosely arramged by research or themes.
+        <p class="workList">
+            <h3 class="subTitle"></h2>
+
+            <a class="workLink" href="work/fourmant.html">&#9670; Fourmant</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/threenoteexternal.html">&#9670; Three Note External Body Resonance Investigation</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/phonemehomophone.html">&#9670; Phoneme/Homophone</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/untitledsonicsigil.html">&#9670; Untitled (Sonic Sigil)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/overnotafter2017.html">&#9670; Over, Not After (2017)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/arbitraryinfinitary.html">&#9670; Arbitrary and Infintary (2017)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/alphabeta.html">&#9670; Alpha-Beta (2017)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/limitations.html">&#9670; Limitations (2017)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/nouveau.html">&#9670; Nouveau (2016)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/musubu.html">&#9670; MuSuBu (2016)</a>
+            <br />
+            <br />
+            <a class="workLink" href="work/xere.html">&#9670; XeRe (2016-)</a>
+            <br />
+            <br />
         </p>
         <br />
-        <hr />
+    </div>
+    <br />
+
+
+
+
+
+<!-- ----- FOOTER FOOTER FOOTER ----- -->
+
+
+    <!-- ----- SHOW FOOTNOTES BUTTON ----- -->
+    <!-- footerButton is a class that simply styles the button -->
+    <!-- buttonHide is a general class for hiding/revealing the button -->
+    <p class="footerButton buttonHide" id="showButton" onclick="showFooter()">show projects</p>
+
+
+    <!-- footNotes is a class that hides/reveals content -->
+    <div class="footNotes" id="footerContent">
+
+        <!-- ----- HIDE FOOTNOTES BUTTON ----- -->
+        <!-- footerButton is a class that simply styles the button -->
+        <p class="footerButton" id="hideButton" style="cursor:context-menu;" onclick="hideFooter()">hide projects</p>
+
+
+        <!-- ----- FOOTER CONTENT ----- -->
+        <div class="footerContent">
+
+            <br />
+            <br />
 
         <p class="workList">
             <h3 class="subTitle"> A Voice Is Not One Thing (2018-) </h2>
@@ -114,17 +177,49 @@
             <a class="workLink" href="work/del’objetincertain.html">&#9670; De L’Objet Incertain (2016)</a>
             <br />
             <br />
-            <p class="workInfo">&#9670; Will To Entropy (2014)</p>
+            <p class="workInfo">&#9670; <strike>Will To Entropy (2014)</strike></p>
             <br />
             <br />
-            <p class="workInfo">&#9670; dismension (2020)</p>
+            <p class="workInfo">&#9670; <strike>dismension (2020)</strike></p>
             <br />
             <br />
         </p>
+
+        </div>
         <br />
-        <p class="footerBar"></p>
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
-    <br />
+
+
+
+<!-- SCRIPT SCRIPT SCRIPT -->
+
+<script>
+
+    /* reveals the footer content and hides the 'show footer' button */
+    function showFooter() {
+
+        /* reveal the footer content */
+        document.getElementById("footerContent").style.display = "block";
+        /* reveal the 'hide footer' button */
+        document.getElementById("showButton").style.display = "none";
+    }
+
+    /* hides the footer content and the 'hide footer' button */
+    function hideFooter() {
+
+        /* hide the footer content */
+        document.getElementById("footerContent").style.display = "none";
+        /* show the 'show footer' button */
+        document.getElementById("showButton").style.display = "block";
+    }
+
+</script>
+
+
 
 </body>
 </html>

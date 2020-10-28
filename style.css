@@ -42,6 +42,10 @@ ul.menu {
 
 
 /* ----- PAGE TITLE ----- */
+/* ive used a <li> list class to style the page title instead of <p> etc */
+/* perhaps this was so I could use one class to style the links and another
+to have the 'active status' on the link itself */
+
 li.pageTitle {
     display: inline-block;
     color: rgb(100,100,100);
@@ -50,47 +54,66 @@ li.pageTitle {
     text-decoration: none;
     font-weight: bold;
     float: left;
-
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(255,165,0);
-
     cursor:default;
 }
 
-
-/* ----- LINKS ----- */
-li a { /* I don't know why I have to use 'li a' and cant use 'li.link' */
+li.pageMenu {
     display: inline-block;
     color: rgb(100,100,100);
     text-align: center;
-    padding: 14px 16px;
+    text-decoration: none; /* no underline on links */
+    float: right;
+    cursor: default;
+}
+
+
+
+
+
+/* ----- LINKS ----- */
+a.pageMenu { /* I don't know why I have to use 'li a' and cant use 'li.link' */
+    display: inline-block;
+    color: rgb(100,100,100);
+    text-align: center;
+    padding: 14px;
     text-decoration: none; /* no underline on links */
     float: right;
 }
 
-li a:hover {
+a.pageMenu:hover {
     background-color: rgb(245,245,245);
     color: black;
 }
 
-li a:active {
+a.pageMenu-active { /* I don't know why I have to use 'li a' and cant use 'li.link' */
+    display: inline-block;
+    color: rgb(100,100,100);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none; /* no underline on links */
+    float: right;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color: red;
-    color: rgb(150,150,150);
 }
 
-li a.active {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: red;
-}
-
-li.workLink {
-    font-size: 0.8em;
+a {
     color: rgb(100,100,100);
 }
+
+a:hover {
+    color: rgb(255,165,0);
+}
+
+a.active {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: red;
+}
+
 
 
 
@@ -134,7 +157,7 @@ h2.workTitle {
 }
 
 h3.subTitle {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: rgb(100,100,100);
     font-weight: bold;
 }
@@ -146,9 +169,7 @@ audio {
 p.workInfo {
     display: inline;
     font-size: 0.8em;
-    font-style: bold;
     color: rgb(100,100,100);
-    font-weight: bold;
 }
 
 p.workBlurb {
@@ -159,18 +180,20 @@ p.workBlurb {
 
 p.workList {
     display: inline;
-    font-size: 0.4em;
+    font-size: 0.8em;
 }
 
 a.workLink {
-    font-size: 0.9em;
-    padding: 10px;
+    font-size: 0.8em;
+    padding: 0px;
     text-decoration: none;
     color: rgb(100,100,100);
 }
 
 a.workLink:hover {
+    color: rgb(0,0,0);
     background-color: rgb(245,245,245);
+
 }
 
 a.workLink:active {
