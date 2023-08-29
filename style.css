@@ -3,9 +3,14 @@
 
 body {
     margin: 30px 100px;
-    background-color: rgb(250,250,250);
+    /*background-color: rgb(250,250,250);*/
     font-family: sans-serif;
+    height: 50%;
+  	background-color: rgb(250,250,250); /* For browsers that do not support gradients */
+  	/*background-image: linear-gradient(rgb(250,250,250), white);*/
+  	background-image: linear-gradient(to bottom right, rgb(250,250,250), white);
 }
+
 
 hr {
     display: block;
